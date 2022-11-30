@@ -641,7 +641,7 @@ public class Horoskop {
 					System.out.println(uvodPodznak + znakovi.get(3));
 				} else if ((sat == 10 && minut > 20) || (sat == 11 && minut < 10)) {
 					System.out.println(uvodPodznak + znakovi.get(3) + "-" + znakovi.get(4));
-				} else if ((sat == 11 && minut >= 10) || sat == 12 || sat == 13) {
+				} else if ((sat == 11 && minut >= 10) || sat == 12 || (sat == 13 && minut == 0)) {
 					System.out.println(uvodPodznak + znakovi.get(4));
 				} else if (sat == 13 && minut < 45) {
 					System.out.println(uvodPodznak + znakovi.get(4) + "-" + znakovi.get(5));
@@ -794,7 +794,7 @@ public class Horoskop {
 					System.out.println(uvodPodznak + znakovi.get(3));
 				} else if ((sat == 8 && minut > 15) || (sat == 9 && minut < 5)) {
 					System.out.println(uvodPodznak + znakovi.get(3) + "-" + znakovi.get(4));
-				} else if ((sat == 9 && minut >= 5) || sat == 10 || sat == 11 && minut == 0) {
+				} else if ((sat == 9 && minut >= 5) || sat == 10 || (sat == 11 && minut == 0)) {
 					System.out.println(uvodPodznak + znakovi.get(4));
 				} else if (sat == 11 && minut < 45) {
 					System.out.println(uvodPodznak + znakovi.get(4) + "-" + znakovi.get(5));
@@ -825,6 +825,159 @@ public class Horoskop {
 				} else if ((sat == 1 && minut >= 45) || (sat == 2 && minut <= 15)) {
 					System.out.println(uvodPodznak + znakovi.get(11));
 				} else if (sat == 2 && minut > 15 && minut < 30) {
+					System.out.println(uvodPodznak + znakovi.get(11) + "-" + znakovi.get(0));
+				}
+			}
+			if (mesec == 6 && dan <= 10) {
+				if ((sat == 1 && minut >= 55) || (sat == 2 && minut <=30)) {
+					System.out.println(uvodPodznak + znakovi.get(0));
+				} else if ((sat == 2 && minut > 30 && minut < 45)) {
+					System.out.println(uvodPodznak + znakovi.get(0) + "-" + znakovi.get(1));
+				} else if ((sat == 2 && minut >= 45) || (sat == 3 && minut <= 30)) {
+					System.out.println(uvodPodznak + znakovi.get(1));
+				} else if (sat == 3 && minut > 30)  {
+					System.out.println(uvodPodznak + znakovi.get(1) + "-" + znakovi.get(2));
+				} else if ((sat == 4 && minut >= 0) || (sat == 5 && minut <= 15)) {
+					System.out.println(uvodPodznak + znakovi.get(2));
+				} else if (sat == 5 && minut > 15 && minut <= 55) {
+					System.out.println(uvodPodznak + znakovi.get(2) + "-" + znakovi.get(3));
+				} else if ((sat == 5 && minut == 55) || sat == 6 || (sat == 7 && minut <= 35)) {
+					System.out.println(uvodPodznak + znakovi.get(3));
+				} else if ((sat == 7 && minut >= 35) || (sat == 8 && minut < 25)) {
+					System.out.println(uvodPodznak + znakovi.get(3) + "-" + znakovi.get(4));
+				} else if ((sat == 8 && minut >= 25) || sat == 9 || (sat == 10 && minut <= 20)) {
+					System.out.println(uvodPodznak + znakovi.get(4));
+				} else if ((sat == 10 && minut > 20 || (sat == 11 && minut < 5)))  {
+					System.out.println(uvodPodznak + znakovi.get(4) + "-" + znakovi.get(5));
+				} else if ((sat == 11 && minut >= 5) || sat == 12 || (sat == 13 && minut == 0)) {
+					System.out.println(uvodPodznak + znakovi.get(5));
+				} else if (sat == 13 && minut >= 0 && minut < 55) {
+					System.out.println(uvodPodznak + znakovi.get(5) + "-" + znakovi.get(6));
+				} else if ((sat == 13 && minut >= 55) || sat == 14 || (sat == 15 && minut <= 50)) {
+					System.out.println(uvodPodznak + znakovi.get(6));
+				} else if ((sat == 15 && minut > 50) || (sat == 16 && minut < 35)) {
+					System.out.println(uvodPodznak + znakovi.get(6) + "-" + znakovi.get(7));
+				} else if ((sat == 16 && minut >= 35) || sat == 17 || (sat == 18 && minut <= 25)) {
+					System.out.println(uvodPodznak + znakovi.get(7));
+				} else if ((sat == 18 && minut > 25) || (sat == 19 && minut < 20)) {
+					System.out.println(uvodPodznak + znakovi.get(7) + "-" + znakovi.get(8));
+				} else if ((sat == 19 && minut >= 20) || sat == 20 || (sat == 21 && minut <= 5)) {
+					System.out.println(uvodPodznak + znakovi.get(8));
+				} else if (sat == 21 && minut > 5 && minut < 55) {
+					System.out.println(uvodPodznak + znakovi.get(8) + "-" + znakovi.get(9));
+				} else if ((sat == 21 && minut >= 55) || sat == 22 || (sat == 23 && minut <= 10)) {
+					System.out.println(uvodPodznak + znakovi.get(9));
+				} else if (sat == 23 && minut > 10 && minut < 45) {
+					System.out.println(uvodPodznak + znakovi.get(9) + "-" + znakovi.get(10));
+				} else if ((sat == 23 && minut >= 45) || (sat == 0 && minut <= 30)) {
+					System.out.println(uvodPodznak + znakovi.get(10));
+				} else if (sat == 0 && minut > 30 ) {
+					System.out.println(uvodPodznak + znakovi.get(10) + "-" + znakovi.get(11));
+				} else if (sat == 1 && minut >= 0 && minut <= 35) {
+					System.out.println(uvodPodznak + znakovi.get(11));
+				} else if (sat == 1 && minut > 35 && minut < 55) {
+					System.out.println(uvodPodznak + znakovi.get(11) + "-" + znakovi.get(0));
+				}
+			}
+			if (mesec == 6 && dan > 10 && dan <= 20) {
+				if (sat == 1 && minut >= 15 && minut <= 50) {
+					System.out.println(uvodPodznak + znakovi.get(0));
+				} else if ((sat == 1 && minut > 50) || (sat == 2 && minut < 5)) {
+					System.out.println(uvodPodznak + znakovi.get(0) + "-" + znakovi.get(1));
+				} else if (sat == 2 && minut >=5 && minut<=55) {
+					System.out.println(uvodPodznak + znakovi.get(1));
+				} else if ((sat == 2 && minut > 55) || (sat == 3 && minut < 20)) {
+					System.out.println(uvodPodznak + znakovi.get(1) + "-" + znakovi.get(2));
+				} else if ((sat == 3 && minut >= 20) || (sat == 4 && minut <= 35)) {
+					System.out.println(uvodPodznak + znakovi.get(2));
+				} else if ((sat == 4 && minut > 35) || (sat == 5 && minut < 15)) {
+					System.out.println(uvodPodznak + znakovi.get(2) + "-" + znakovi.get(3));
+				} else if ((sat == 5 && minut >= 15) || (sat == 6 && minut <= 50)) {
+					System.out.println(uvodPodznak + znakovi.get(3));
+				} else if ((sat == 6 && minut > 50) || (sat == 7 && minut < 40)) {
+					System.out.println(uvodPodznak + znakovi.get(3) + "-" + znakovi.get(4));
+				} else if ((sat == 7 && minut >= 40) || sat == 8 || (sat == 9 && minut <= 40)) {
+					System.out.println(uvodPodznak + znakovi.get(4));
+				} else if ((sat == 9 && minut > 40) || (sat == 10 && minut <= 30)) {
+					System.out.println(uvodPodznak + znakovi.get(4) + "-" + znakovi.get(5));
+				} else if ((sat == 10 && minut >= 30) || sat == 11 || (sat == 12 && minut <= 20)) {
+					System.out.println(uvodPodznak + znakovi.get(5));
+				} else if ((sat == 12 && minut > 20) || (sat == 13 && minut < 15)) {
+					System.out.println(uvodPodznak + znakovi.get(5) + "-" + znakovi.get(6));
+				} else if ((sat == 13 && minut >= 15) || sat == 14 || (sat == 15 && minut <= 10)) {
+					System.out.println(uvodPodznak + znakovi.get(6));
+				} else if (sat == 15 && minut > 10 && minut < 55) {
+					System.out.println(uvodPodznak + znakovi.get(6) + "-" + znakovi.get(7));
+				} else if ((sat == 15 && minut >= 55) || sat == 16 || (sat == 17 && minut <= 10)) {
+					System.out.println(uvodPodznak + znakovi.get(7));
+				} else if (sat == 17 && minut > 10) {
+					System.out.println(uvodPodznak + znakovi.get(7) + "-" + znakovi.get(8));
+				} else if ((sat == 18 && minut >= 0) || sat == 19 || (sat == 20 && minut <= 10)) {
+					System.out.println(uvodPodznak + znakovi.get(8));
+				} else if ((sat == 20 && minut > 10) || (sat == 21 && minut < 20)) {
+					System.out.println(uvodPodznak + znakovi.get(8) + "-" + znakovi.get(9));
+				} else if ((sat == 21 && minut >= 20) || (sat == 22 && minut <= 30)) {
+					System.out.println(uvodPodznak + znakovi.get(9));
+				} else if ((sat == 22 && minut >= 30) || (sat == 23 && minut < 5)) {
+					System.out.println(uvodPodznak + znakovi.get(9) + "-" + znakovi.get(10));
+				} else if (sat == 23 && minut >= 5 && minut <= 50) {
+					System.out.println(uvodPodznak + znakovi.get(10));
+				} else if ((sat == 23 && minut > 50) || (sat == 0 && minut < 20)) {
+					System.out.println(uvodPodznak + znakovi.get(10) + "-" + znakovi.get(11));
+				} else if (sat == 0 && minut >= 20 && minut <= 55) {
+					System.out.println(uvodPodznak + znakovi.get(11));
+				} else if((sat == 0 && minut > 55) || (sat == 1 && minut < 15)) {
+					System.out.println(uvodPodznak + znakovi.get(11) + "-" + znakovi.get(0));
+				}
+			}
+			if (mesec == 6 && dan > 20) {
+				if ((sat == 0 && minut >= 30) || (sat == 1 && minut <= 5)) {
+					System.out.println(uvodPodznak + znakovi.get(0));
+				} else if (sat == 1 && minut > 5 && minut < 20) {
+					System.out.println(uvodPodznak + znakovi.get(0) + "-" + znakovi.get(1));
+				} else if ((sat == 1 && minut >= 20) || (sat == 2 && minut <= 5)) {
+					System.out.println(uvodPodznak + znakovi.get(1));
+				} else if (sat == 2 && minut > 5 && minut < 35) {
+					System.out.println(uvodPodznak + znakovi.get(1) + "-" + znakovi.get(2));
+				} else if ((sat == 2 && minut >= 35) || (sat == 3 && minut <= 50)) {
+					System.out.println(uvodPodznak + znakovi.get(2));
+				} else if ((sat == 3 && minut > 50) || (sat == 4 && minut < 30)) {
+					System.out.println(uvodPodznak + znakovi.get(2) + "-" + znakovi.get(3));
+				} else if ((sat == 4 && minut >= 30)  || sat == 5 || (sat == 6 && minut <= 10)) {
+					System.out.println(uvodPodznak + znakovi.get(3));
+				} else if (sat == 6 && minut > 10) {
+					System.out.println(uvodPodznak + znakovi.get(3) + "-" + znakovi.get(4));
+				} else if ((sat == 7 && minut >= 0) || (sat == 8 && minut == 55)) {
+					System.out.println(uvodPodznak + znakovi.get(4));
+				} else if ((sat == 8 && minut > 55) || (sat == 9 && minut == 40)) {
+					System.out.println(uvodPodznak + znakovi.get(4) + "-" + znakovi.get(5));
+				} else if ((sat == 9 && minut >= 40) || sat == 10 || (sat == 11 && minut <= 35)) {
+					System.out.println(uvodPodznak + znakovi.get(5));
+				} else if ((sat == 11 && minut > 35) || (sat == 12 && minut < 30)) {
+					System.out.println(uvodPodznak + znakovi.get(5) + "-" + znakovi.get(6));
+				} else if ((sat == 12 && minut >= 30) || sat == 13 || (sat == 14 && minut <= 25)) {
+					System.out.println(uvodPodznak + znakovi.get(6));
+				} else if ((sat == 14 && minut > 25) || (sat == 15 && minut <= 10)) {
+					System.out.println(uvodPodznak + znakovi.get(6) + "-" + znakovi.get(7));
+				} else if ((sat == 15 && minut >= 10) || sat == 16 || (sat == 17 && minut <= 5)) {
+					System.out.println(uvodPodznak + znakovi.get(7));
+				} else if ((sat == 17 && minut > 5 && minut < 45)) {
+					System.out.println(uvodPodznak + znakovi.get(7) + "-" + znakovi.get(8));
+				} else if((sat == 17 && minut >= 45) || sat == 18 || (sat == 19 && minut <= 45)) {
+					System.out.println(uvodPodznak + znakovi.get(8));
+				} else if ((sat == 19 && minut > 45) || (sat == 20 && minut < 30)) {
+					System.out.println(uvodPodznak + znakovi.get(8) + "-" + znakovi.get(9));
+				} else if ((sat == 20 && minut >= 30) || (sat == 21 && minut <= 45)) {
+					System.out.println(uvodPodznak + znakovi.get(9));
+				} else if (sat == 21 && minut > 45 || (sat == 22 && minut < 20)) {
+					System.out.println(uvodPodznak + znakovi.get(9) + "-" + znakovi.get(10));
+				} else if ((sat == 22 && minut >= 20) || (sat == 23 && minut <= 5)) {
+					System.out.println(uvodPodznak + znakovi.get(10));
+				} else if (sat == 23 && minut > 5 && minut < 40) {
+					System.out.println(uvodPodznak + znakovi.get(10) + "-" + znakovi.get(11));
+				} else if ((sat == 23 && minut >= 40) || (sat == 0 && minut <= 15)) {
+					System.out.println(uvodPodznak + znakovi.get(11));
+				} else if (sat == 0 && minut > 15 && minut < 30) {
 					System.out.println(uvodPodznak + znakovi.get(11) + "-" + znakovi.get(0));
 				}
 			}
